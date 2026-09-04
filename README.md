@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+# Exercício - Fake Store API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação simples em React + TypeScript que consome a [Fake Store API](https://fakestoreapi.com/products) para listar produtos.
 
-Currently, two official plugins are available:
+> Projeto desenvolvido como exercício de prática, durante a formação fullstack **Dev em Dobro**. Focado em consumo de API externa com tipagem TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛍️ Sobre o projeto
 
-## React Compiler
+Lista os produtos retornados pela Fake Store API em formato de cards, exibindo nome, preço, categoria, descrição e avaliação de cada item.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Funcionalidades
 
-## Expanding the ESLint configuration
+- Consumo da API via `fetch`
+- Listagem dos produtos em cards
+- Exibição de nome, preço, categoria, descrição e nota/avaliações
+- Tipagem das respostas da API com TypeScript
+- Estilização responsiva com Tailwind CSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Tailwind CSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Como rodar localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/marcormsilva/exercico-buscar-dados-api-fakestore.git
+cd exercico-buscar-dados-api-fakestore
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Preview
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Preview](./public/preview1.png)
+![Preview](./public//preview2.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📚 Aprendizados
 
-```
+Exercício focado em praticar requisições HTTP e tipagem de dados vindos de uma API externa em TypeScript, com estilização usando Tailwind.
+
+## 🔗 Contato
+
+- [LinkedIn](https://www.linkedin.com/in/marco-rm-silva/)
+- [GitHub](https://github.com/marcormsilva)
