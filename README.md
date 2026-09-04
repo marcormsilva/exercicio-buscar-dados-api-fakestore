@@ -6,15 +6,16 @@ Aplicação simples em React + TypeScript que consome a [Fake Store API](https:/
 
 ## 🛍️ Sobre o projeto
 
-Lista os produtos retornados pela Fake Store API em formato de cards, exibindo nome, preço, categoria, descrição e avaliação de cada item.
+Lista os produtos retornados pela Fake Store API em formato de cards, exibindo nome, preço, categoria, imagem, descrição e avaliação de cada item.
 
 ## ⚙️ Funcionalidades
 
-- Consumo da API via `fetch`
-- Listagem dos produtos em cards
-- Exibição de nome, preço, categoria, descrição e nota/avaliações
-- Tipagem das respostas da API com TypeScript
-- Estilização responsiva com Tailwind CSS
+- Consumo da API via `fetch` com `useEffect`
+- Estado de carregamento (loading) enquanto os dados são buscados
+- Listagem dos produtos em cards, com grid responsivo (1 a 4 colunas dependendo da tela)
+- Exibição de nome, preço, categoria, imagem, descrição e nota/avaliações
+- Tipagem completa das respostas da API com TypeScript (interface `Product`)
+- Estilização com Tailwind CSS
 
 ## 🛠️ Tecnologias
 
@@ -33,12 +34,12 @@ npm run dev
 
 ## 📸 Preview
 
-![Preview](./public/preview1.png)
-![Preview](./public//preview2.png)
+![Preview do projeto](./public/preview1.png)
+![Preview do projeto](./public/preview2.png)
 
 ## 📚 Aprendizados
 
-Exercício focado em praticar requisições HTTP e tipagem de dados vindos de uma API externa em TypeScript, com estilização usando Tailwind.
+Exercício focado em praticar requisições HTTP com `useEffect`, controle de estado de carregamento, e tipagem de dados vindos de uma API externa em TypeScript, com estilização usando Tailwind.
 
 ## 🔗 Contato
 
